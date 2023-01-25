@@ -27,7 +27,8 @@ FORMS += \
 
 TRANSLATIONS += \
     Calculadora_fr_FR.ts \
-    Calculadora_en.ts
+    Calculadora_en.ts \
+    Calculadora_pr.ts
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -35,7 +36,8 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 DISTFILES += \
-    Calculadora_en.ts
+    Calculadora_en.ts \
+    Calculadora_pr.qm
 
 RESOURCES += \
     Resoureces.qrc
